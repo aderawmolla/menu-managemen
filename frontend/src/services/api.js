@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:2000/api',  // Backend base URL
+  baseURL: 'https://menu-managemen-1.onrender.com/api',  // Backend base URL
 });
 
 export const fetchMenus = () => api.get('/menus');
