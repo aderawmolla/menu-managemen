@@ -11,8 +11,6 @@ app.use(express.json({ limit: '200mb' }))
 app.use(cors()) 
 import sequelize from './config/database.js'
 app.get('/test', (req, res) => {
-  console.log('test successful');
-
   res.send('Test successful');
 });
 sequelize.sync().then(() => {

@@ -49,7 +49,7 @@ export default function TreeNode({
         )}
 
         {/* Display node label (if available) */}
-        <span className="text-sm">{node.label || 'Unnamed Node'}</span>
+        <span className="text-sm">{node.name || 'Unnamed Node'}</span>
 
         {/* Show action icons (Add, Edit, Delete) when hovered */}
         {isHovered && (

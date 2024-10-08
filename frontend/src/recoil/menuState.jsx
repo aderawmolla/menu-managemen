@@ -6,7 +6,7 @@ export const menuState = atom({
 });
 export const sidebarState = atom({
   key: 'sidebarState',
-  default: true, // Sidebar open by default
+  default: true, 
 });
 
 

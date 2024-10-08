@@ -3,9 +3,9 @@ import sequelize from '../config/database.js';
 
 const Menu = sequelize.define('Menu', {  
     id: {
-        type: DataTypes.UUID,
+        type: DataTypes.UUID, 
         primaryKey: true,
-        defaultValue: DataTypes.UUIDV4,
+        defaultValue: DataTypes.UUIDV4,  
     },
     depth: {
         type: DataTypes.INTEGER,
@@ -16,7 +16,7 @@ const Menu = sequelize.define('Menu', {
         allowNull: false,
     },
     parentId: {
-        type: DataTypes.UUIDV4,
+        type: DataTypes.UUID,  // Use DataTypes.UUID here
         allowNull: true,
         defaultValue: null,
     },
@@ -25,14 +25,9 @@ const Menu = sequelize.define('Menu', {
         allowNull: false,
         defaultValue: false,
     },
-    createdAt: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
-    updatedAt: {
-        type: DataTypes.DATE,
-        defaultValue: DataTypes.NOW,
-    },
+    
+}, {
+    timestamps: true,  // Automatically add createdAt and updatedAt fields
 });
 
 export default Menu;

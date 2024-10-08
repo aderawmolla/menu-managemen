@@ -1,8 +1,7 @@
-// services/api.js
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',  // Backend base URL
+  baseURL: 'http://localhost:2000/api',  // Backend base URL
 });
 
 export const fetchMenus = () => api.get('/menus');

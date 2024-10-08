@@ -35,7 +35,7 @@ export async function addMenuItem(req, res) {
     });
     res.status(201).json(menu);
   } catch (error) {
-    res.status(500).json({ error: 'Failed to add menu item' });
+    res.status(500).json({ error: `Failed to add menu item ${error}` });
   }
 }
 

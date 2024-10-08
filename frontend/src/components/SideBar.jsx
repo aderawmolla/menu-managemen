@@ -68,7 +68,7 @@ const SideBar = () => {
             </div>
 
             {/* Navigation Links */}
-            <nav className="md:flex md:flex-col space-y-2 hidden ">
+            <nav className="md:flex md:flex-col space-y-2 lg:w-[240px] hidden ">
                 {Links.map((link) => (
                     <NavLink
                         to={link.path}

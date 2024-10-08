@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default [
     {
-        id: uuidv4(), // UUID for the root node
+        id: uuidv4(), 
         name: "System Management",
         depth: 0,
         isGroup: true,
